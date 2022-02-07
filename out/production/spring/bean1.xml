@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+
+  <bean id="stu" class="com.xiaotu.spring5.collectiontype.Stu">
+    <property name="courses">
+      <array>
+        <value>JAVA</value>
+        <value>PHP</value>
+      </array>
+    </property>
+
+    <property name="list">
+      <list>
+        <value>张三</value>
+        <value>李四</value>
+      </list>
+    </property>
+
+    <property name="maps">
+      <map>
+        <entry key="JAVA" value="java"></entry>
+        <entry key="PHP" value="php"></entry>
+      </map>
+    </property>
+
+    <property name="sets">
+      <set>
+        <value>MySQL</value>
+        <value>Redis</value>
+        <value>MongoDB</value>
+        <value>TiDB</value>
+      </set>
+    </property>
+
+    <property name="coursesList">
+      <list>
+        <ref bean="course1"></ref>
+        <ref bean="course2"></ref>
+      </list>
+    </property>
+
+  </bean>
+
+  <bean id="course1" class="com.xiaotu.spring5.collectiontype.Courses" p:cname="Spring"></bean>
+  <bean id="course2" class="com.xiaotu.spring5.collectiontype.Courses" p:cname="MyBatis"></bean>
+
+</beans>
