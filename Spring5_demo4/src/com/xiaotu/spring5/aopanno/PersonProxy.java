@@ -1,4 +1,4 @@
-package com.xiaotu.spring5.anpanno;
+package com.xiaotu.spring5.aopanno;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
