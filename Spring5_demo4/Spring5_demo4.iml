@@ -88,5 +88,15 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://C:/aspectj1.9/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://C:/aspectj1.9/lib" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>
