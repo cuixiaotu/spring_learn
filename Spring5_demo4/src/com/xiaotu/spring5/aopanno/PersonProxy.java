@@ -1,5 +1,6 @@
 package com.xiaotu.spring5.aopanno;
 
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.core.annotation.Order;
@@ -16,6 +17,13 @@ public class PersonProxy {
     @Before(value = "execution(* com.xiaotu.spring5.aopanno.User.add(..))")
     public void before() {
         System.out.println("PersonProxy.before....");
+    }
+
+
+    //后置通知（返回通知）
+    @AfterReturning(value = "execution(* com.xiaotu.spring5.aopanno.User.add(..))")
+    public void afterReturning() {
+        System.out.println("PersonProxy.afterReturning....");
     }
 
 }
