@@ -1,5 +1,4 @@
 package com.xiaotu.spring5.dao;
-import com.xiaotu.spring5.dao.BookDao;
 import com.xiaotu.spring5.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;

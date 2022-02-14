@@ -22,6 +22,7 @@ public class TestBook {
         book.setUserId("3");
         book.setUsername("java3");
         book.setUstatus("c");
+        System.out.println(book);
         bookService.addBook(book);
 
 //        bookService.updateBook(book);
