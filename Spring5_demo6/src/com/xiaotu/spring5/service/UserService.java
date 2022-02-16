@@ -7,8 +7,8 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-//@Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.REPEATABLE_READ,timeout = -1,readOnly = false,rollbackFor = {},noRollbackFor = {})
 @Service
+@Transactional(propagation = Propagation.REQUIRED,isolation = Isolation.REPEATABLE_READ,timeout = -1,readOnly = false,rollbackFor = {},noRollbackFor = {})
 public class UserService {
 
     @Autowired
@@ -16,7 +16,7 @@ public class UserService {
 
     public void accountMoney(){
         userDao.reduceMoney();
-        //int x = 10/0;
+        int x = 10/0;
         userDao.addMoney();
     }
 

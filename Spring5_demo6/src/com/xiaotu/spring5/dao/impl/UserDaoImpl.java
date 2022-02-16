@@ -11,14 +11,14 @@ public class UserDaoImpl implements UserDao {
     private JdbcTemplate jdbcTemplate;
 
     @Override
-    public void addMoney() {
+    public void reduceMoney() {
         String sql = "update t_account set money=money-? where username=?";
         int i = jdbcTemplate.update(sql,100,"lucy");
         System.out.println(i);
     }
 
     @Override
-    public void reduceMoney() {
+    public void addMoney() {
         String sql = "update t_account set money=money+? where username=?";
         int i = jdbcTemplate.update(sql,100,"mary");
         System.out.println(i);

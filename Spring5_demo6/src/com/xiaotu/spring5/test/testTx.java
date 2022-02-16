@@ -13,7 +13,7 @@ public class testTx {
         @Test
         public void test1(){
                 ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
-                UserService userService = context.getBean("bookService", UserService.class);
+                UserService userService = context.getBean("userService", UserService.class);
 
                 userService.accountMoney();
         }
